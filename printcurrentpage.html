@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print current page</title>
+</head>
+<body>
+
+
+    <p>i am a king</p>
+    <button onclick="printout()">raja</button>
+
+
+<script>
+
+
+//  1 Write a JavaScript program to print the contents of the current window
+
+
+    function printout(){
+        window.print();
+    }
+//  2 Write a JavaScript program to get the current date.
+    let today=new Date();
+    console.log(today);
+
+// 3 Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
+    let x=5;
+    let y=6;
+    let z=7;
+    let w=(x+y+z)/2;
+    let op=Math.sqrt(w*((w-x)*(w-y)*(w-z)));
+    console.log(op);
+
+    // 4  Write a JavaScript program to reverse a given string. Without using sting reverse method
+
+    let input=["raja","balu","babu","vamsi"];
+    let output="";
+    let i;
+    function reversestring(){
+        for(i=input.length-1; i >=0; i--){
+            output+=input[i] + " " ;
+        }
+        return output;
+    }
+console.log(input);
+console.log(reversestring());
+
+
+// 5   Write a JavaScript program to capitalize the first letter of each word of a given string
+
+let para="rajesh is very bad" ;
+let r;
+function clearing(){
+para=para.split(" ");
+for(r=0; para.length>r; r++){
+    para[r]=para[r][0].toUpperCase() + para[r].substr(1);
+}
+return para.join(" ");
+}
+console.log(para);
+console.log(clearing());
+
+// 6  Write a JavaScript program to find the largest of three given integers
+
+let numbers=[3333,44444,5000];
+function number_output(arr){
+    return Math.max.apply(null,arr);
+}
+console.log(numbers);
+console.log(number_output(numbers));
+
+
+//   7   Write a JavaScript program to get the website URL (loading page).
+
+console.log(document.URL);
+</script>
+
+</body>
+</html>
