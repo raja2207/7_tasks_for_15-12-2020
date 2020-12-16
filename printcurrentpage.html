@@ -18,44 +18,44 @@
 //  1 Write a JavaScript program to print the contents of the current window
 
 
-    function printout(){
+    function printout(){                 //for using  this method print the output directly . 
         window.print();
     }
 //  2 Write a JavaScript program to get the current date.
     let today=new Date();
-    console.log(today);
+    console.log(today);       // for using this method get output for  current  date .
 
 // 3 Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.
-    let x=5;
-    let y=6;
-    let z=7;
-    let w=(x+y+z)/2;
-    let op=Math.sqrt(w*((w-x)*(w-y)*(w-z)));
-    console.log(op);
+    let x=5;                     // 5 value store in x variable 
+    let y=6;                      // 6 value store in y variable
+    let z=7;                      // 7 value store in z variable
+    let w=(x+y+z)/2;                 // x,y and z these first add and multiply in 2 and finaly store in w
+    let op=Math.sqrt(w*((w-x)*(w-y)*(w-z)));   // use triangle formula and this ouput store in "op".
+    console.log(op);                       //finaly get output in console
 
     // 4  Write a JavaScript program to reverse a given string. Without using sting reverse method
 
-    let input=["raja","balu","babu","vamsi"];
-    let output="";
-    let i;
-    function reversestring(){
-        for(i=input.length-1; i >=0; i--){
+    let input=["raja","balu","babu","vamsi"];   // strings store in input
+    let output="";                               // this using  for store in output   
+    let i;                                        
+    function reversestring(){                    
+        for(i=input.length-1; i >=0; i--){         
             output+=input[i] + " " ;
         }
-        return output;
+        return output;                         // theis is  return the output
     }
 console.log(input);
-console.log(reversestring());
+console.log(reversestring());                
 
 
 // 5   Write a JavaScript program to capitalize the first letter of each word of a given string
-
-let para="rajesh is very bad" ;
+       
+let para="rajesh is very bad" ;           //string store in para
 let r;
 function clearing(){
-para=para.split(" ");
+para=para.split(" ");                  //split the para stored values
 for(r=0; para.length>r; r++){
-    para[r]=para[r][0].toUpperCase() + para[r].substr(1);
+    para[r]=para[r][0].toUpperCase() + para[r].substr(1);      
 }
 return para.join(" ");
 }
@@ -64,9 +64,9 @@ console.log(clearing());
 
 // 6  Write a JavaScript program to find the largest of three given integers
 
-let numbers=[3333,44444,5000];
+let numbers=[3333,44444,5000];    // values store in "numbers"
 function number_output(arr){
-    return Math.max.apply(null,arr);
+    return Math.max.apply(null,arr);       //  math.max.apply using for get maximum value.  
 }
 console.log(numbers);
 console.log(number_output(numbers));
@@ -74,7 +74,12 @@ console.log(number_output(numbers));
 
 //   7   Write a JavaScript program to get the website URL (loading page).
 
-console.log(document.URL);
+console.log(document.URL);    // using documet URL for  get document path
+
+
+
+
+
 </script>
 
 </body>
